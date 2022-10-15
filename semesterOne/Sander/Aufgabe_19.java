@@ -47,9 +47,9 @@ public class Aufgabe_19 {
 		
 	}
 	
-	public void setGehaltserhöhung(double Gehaltserhöhung) {
+	public void setGehaltserhoehung(double Gehaltserhoehung) {
 		
-		Gehalt += Gehaltserhöhung;
+		Gehalt += Gehaltserhoehung;
 		
 	}
 	

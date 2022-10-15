@@ -15,7 +15,7 @@ public class Aufgabe_13_Main {
 		Auto1.Anzeige();
 		
 		boolean k = Auto1.ausleihbar();
-		System.out.println("Verfügbarkeit: " + k);
+		System.out.println("Verfuegbarkeit: " + k);
 		System.out.println();
 		
 		Auto1.ausleihen();

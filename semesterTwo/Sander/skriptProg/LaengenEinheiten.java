@@ -23,7 +23,7 @@ public class LaengenEinheiten extends JFrame implements ActionListener {
 	private String einheit;
 
 	public LaengenEinheiten() {
-		super("Längeneinheiten");
+		super("Laengeneinheiten");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
 		c.setLayout(new BorderLayout(10, 10));

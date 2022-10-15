@@ -18,7 +18,7 @@ public class Aufgabe_11 {
 		
 		Scanner in = new Scanner(System.in);
 		
-		System.out.println("Geben Sie eine dreistellige natürliche Zahl ein: ");
+		System.out.println("Geben Sie eine dreistellige natuerliche Zahl ein: ");
 		
 		x = in.nextInt();
 		
@@ -37,7 +37,7 @@ public class Aufgabe_11 {
 		
 		if ( q == 0 || w == 0 || e == 0) {
 			
-			System.out.println("Das Teilen durch 0 ist nicht möglich.");
+			System.out.println("Das Teilen durch 0 ist nicht moeglich.");
 			
 		}
 	}

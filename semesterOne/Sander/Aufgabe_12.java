@@ -19,7 +19,7 @@ public class Aufgabe_12 {
 		
 		Scanner in = new Scanner(System.in);
 		
-		System.out.println("Geben Sie eine natürliche Zahl an Sekunden ein:");
+		System.out.println("Geben Sie eine natuerliche Zahl an Sekunden ein:");
 		x = in.nextLong();
 		
 	}
@@ -58,7 +58,7 @@ public class Aufgabe_12 {
 		
 		System.out.println( Min + " Minuten");
 		
-		System.out.println("und natürlich " + Sek + " Sekunden");
+		System.out.println("und natuerlich " + Sek + " Sekunden");
 		
 	}
 }

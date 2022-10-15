@@ -8,7 +8,7 @@ import java.awt.event.WindowListener;
 
 public class Close1 extends JFrame implements WindowListener, KeyListener {
 	// Es wird unterschieden zwischen im Fenster und durch Tasten
-	// ausgelöste Ereignisse
+	// ausgeloeste Ereignisse
 	private long start;
 
 	public Close1() {
@@ -32,7 +32,7 @@ public class Close1 extends JFrame implements WindowListener, KeyListener {
 		long end = System.currentTimeMillis();
 		// ermittle
 		double time = (end - start) / 1000;
-		System.out.println("Das Fenster war " + time + " Sekunden geöffnet.");
+		System.out.println("Das Fenster war " + time + " Sekunden geoeffnet.");
 	}
 
 	// Es folgen WindowListener-Methoden
@@ -43,8 +43,8 @@ public class Close1 extends JFrame implements WindowListener, KeyListener {
 	}
 
 	// Die folgenden Methoden sind im Interface WindowListener
-	// vorgesehen, werden aber hier nicht benötigt und deshalb
-	// „leer“ implementiert.
+	// vorgesehen, werden aber hier nicht benoetigt und deshalb
+	// "leer" implementiert.
 	public void windowActivated(WindowEvent e) {
 	}
 

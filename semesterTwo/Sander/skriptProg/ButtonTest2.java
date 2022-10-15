@@ -22,9 +22,9 @@ public class ButtonTest2 extends JFrame implements ActionListener {
 		super("Radiobuttons und eine Checkbox");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		red = new JRadioButton("red", true);
-		// true bedeutet: Button ist ausgewählt
+		// true bedeutet: Button ist ausgewaehlt
 		yellow = new JRadioButton("gelb");
-		green = new JRadioButton("grün");
+		green = new JRadioButton("gruen");
 		
 		red.addActionListener(this);
 		yellow.addActionListener(this);

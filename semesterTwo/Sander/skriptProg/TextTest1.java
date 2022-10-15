@@ -23,9 +23,9 @@ public class TextTest1 extends JFrame implements ActionListener {
 		Container c = getContentPane();
 		c.setLayout(new GridLayout(7, 1, 0, 0));
 		c.add(new JLabel("Artikel:"));
-		artikel = new JTextField(30); // 30 ist die Feldlänge
+		artikel = new JTextField(30); // 30 ist die Feldlaenge
 
-		// Eingabe wird überprüft / verifiziert
+		// Eingabe wird ueberprueft / verifiziert
 		artikel.setInputVerifier(new InputVerifier() {
 			public boolean verify(JComponent input) {
 				return isNotEmpty((JTextField) input);

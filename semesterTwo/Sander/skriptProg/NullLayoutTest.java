@@ -10,8 +10,8 @@ public class NullLayoutTest extends JFrame {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		// Über getContentPane() wird ein Container bereitgestellt.
-		// In diesen können graphische Objekte aufgenommen werden.
+		// ueber getContentPane() wird ein Container bereitgestellt.
+		// In diesen koennen graphische Objekte aufgenommen werden.
 		Container c = getContentPane();
 		c.setBackground(Color.white);
 		c.setLayout(null);
@@ -20,7 +20,7 @@ public class NullLayoutTest extends JFrame {
 		MyPanel p2 = new MyPanel(2);
 		MyPanel p3 = new MyPanel(3);
 
-		// Startposition, Breite, Höhe
+		// Startposition, Breite, Hoehe
 
 		p1.setBounds(10, 10, 100, 100);
 		p2.setBounds(120, 10, 100, 50);

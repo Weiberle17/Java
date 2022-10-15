@@ -21,10 +21,10 @@ public class Aufgabe_18 {
 		
 		do {
 		
-			System.out.println("Geben Sie die Höhe des Baumes ein: ");
+			System.out.println("Geben Sie die Hoehe des Baumes ein: ");
 			h = in.nextInt();
 		
-			System.out.println("Geben Sie die Höhe des Stammes ein: ");
+			System.out.println("Geben Sie die Hoehe des Stammes ein: ");
 			s = in.nextInt();
 			
 		} while (h < s || h - s < 2);

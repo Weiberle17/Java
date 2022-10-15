@@ -17,7 +17,7 @@ public class Aufgabe_3 {
 		A = PI * r * r;
 		U = 2 * PI * r;
 		
-		System.out.println("Fläche: " + A);
+		System.out.println("Flaeche: " + A);
 		System.out.println("Umfang: " + U);
 		
 	}

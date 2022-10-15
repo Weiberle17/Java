@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Aufgabe_13 {
 
-	public static String Typ, v, Sitze; 			//Typ , Höchstgeschwindigkeit, Sitze
+	public static String Typ, v, Sitze; 			//Typ , Hoechstgeschwindigkeit, Sitze
 	public static int Pk, Pp;						//Leistung in kW, Leistung in PS
-	public static int j;							//Verfügbarkeit
-	public static boolean k;						//Verfügbarkeit
+	public static int j;							//Verfuegbarkeit
+	public static boolean k;						//Verfuegbarkeit
 	
 	public static void Eingabe() {
 		
@@ -15,15 +15,15 @@ public class Aufgabe_13 {
 		
 		System.out.println("Typ des Fahrzeugs: ");
 		Typ = in.nextLine();
-		System.out.println("Höchstgeschwindigkeit des Fahrzeugs: ");
+		System.out.println("Hoechstgeschwindigkeit des Fahrzeugs: ");
 		v = in.next();
 		System.out.println("Leistung in kW: ");
 		Pk = in.nextInt();
 		Pp = (int) (Pk * 1.36);
-		System.out.println("Anzahl der Sitzplätze: ");
+		System.out.println("Anzahl der Sitzplaetze: ");
 		Sitze = in.next();
-		System.out.println("1 = Fahrzeug verfügbar");
-		System.out.println("2 = Fahrzeug nicht verfügbar");
+		System.out.println("1 = Fahrzeug verfuegbar");
+		System.out.println("2 = Fahrzeug nicht verfuegbar");
 		j = in.nextInt();
 		
 		if (j == 1) { 
@@ -41,10 +41,10 @@ public class Aufgabe_13 {
 	public static void Anzeige() {
 		
 		System.out.println("Typ des Fahrzeugs: " + Typ);
-		System.out.println("Höchstgeschwindigkeit des Fahrzeugs: " + v);
+		System.out.println("Hoechstgeschwindigkeit des Fahrzeugs: " + v);
 		System.out.println("Leistung in kW und PS: " + Pk + "kW/" + Pp + "PS");
-		System.out.println("Anzahl der Sitzplätze: " + Sitze);
-		System.out.println("Verfügbarkeit: " + k);
+		System.out.println("Anzahl der Sitzplaetze: " + Sitze);
+		System.out.println("Verfuegbarkeit: " + k);
 		System.out.println();
 		
 	}

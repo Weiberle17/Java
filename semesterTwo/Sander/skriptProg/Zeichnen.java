@@ -12,8 +12,8 @@ public class Zeichnen extends JFrame {
 		super("Grafik");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		add(new MyPanel());
-		// Mit pack() werden die Elemente in einer “passenden”
-		// Fenstergröße angeordnet
+		// Mit pack() werden die Elemente in einer "passenden"
+		// Fenstergroesse angeordnet
 		pack();
 		setVisible(true);
 	}
@@ -29,7 +29,7 @@ public class Zeichnen extends JFrame {
 			super.paintComponents(g);
 			g.setColor(Color.red);
 
-			// Erzeuge ein Rechteck mit der vorher festgelegten Füllfarbe
+			// Erzeuge ein Rechteck mit der vorher festgelegten Fuellfarbe
 			// Parameter:
 			g.fillRoundRect(30, 30, 240, 140, 30, 30);
 			g.setColor(Color.white);

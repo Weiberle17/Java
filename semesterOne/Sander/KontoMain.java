@@ -17,7 +17,7 @@ public class KontoMain {
     meinKonto.setKontonummer(in.nextInt());
 
     int Knr = meinKonto.getKontonummer();
-    System.out.println("Konto " + Knr + " enthält: ");
+    System.out.println("Konto " + Knr + " enthaelt: ");
 
     meinKonto.setSaldo(500.);
 
@@ -25,7 +25,7 @@ public class KontoMain {
 
     double saldo = meinKonto.getSaldo();
 
-    System.out.println("Saldo: " + saldo + "€");
+    System.out.println("Saldo: " + saldo + "$");
 
     System.out.println("Was wollen Sie tun?");
     do {
@@ -38,18 +38,18 @@ public class KontoMain {
 
     if (x == 1) {
 
-      System.out.println("Wie viel möchten Sie abheben?");
+      System.out.println("Wie viel moechten Sie abheben?");
       meinKonto.zahleAus(in.nextDouble());
 
     }else if ( x == 2) {
 
-      System.out.println("Wie viel möchten Sie einbezahlen?");
+      System.out.println("Wie viel moechten Sie einbezahlen?");
       meinKonto.zahleEin(in.nextDouble());
 
     }
 
     saldo = meinKonto.getSaldo();
-    System.out.println("Ihr neues Saldo beträgt: " + saldo + "€");
+    System.out.println("Ihr neues Saldo betraegt: " + saldo + "$");
 
   }
 }

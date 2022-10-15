@@ -22,7 +22,7 @@ public class Close2 extends JFrame {
 	private void printTime() {
 		long end = System.currentTimeMillis();
 		double time = (end - start) / 1000;
-		System.out.println("Das Fenster war " + time + " Sekunden geöffnet.");
+		System.out.println("Das Fenster war " + time + " Sekunden geoeffnet.");
 	}
 	 private class MyWindowListener extends WindowAdapter {
 		 public void windowClosing(WindowEvent e) {

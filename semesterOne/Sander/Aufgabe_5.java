@@ -10,7 +10,7 @@ public class Aufgabe_5 {
 		
 		Scanner in = new Scanner (System.in);
 		
-		System.out.println("Dies ist ein Median berechner für drei Zahlen.");
+		System.out.println("Dies ist ein Median berechner fuer drei Zahlen.");
 		System.out.println("Geben Sie die erste beliebige Zahl an: ");
 		x = in.nextDouble();
 		

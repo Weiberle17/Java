@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Aufgabe_15 {
 
-	public static double K, Z, R, z, r;	//Kredithöhe, Zinssat, monatliche Rate, Laufzeit des Kredits, Zinsen, Tilgung
+	public static double K, Z, R, z, r;	//Kredithoehe, Zinssat, monatliche Rate, Laufzeit des Kredits, Zinsen, Tilgung
 	public static int i, L;
 	
 	public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class Aufgabe_15 {
 		
 		Scanner in = new Scanner(System.in);
 		
-		System.out.println("Geben Sie die Kredithöhe ein: ");
+		System.out.println("Geben Sie die Kredithoehe ein: ");
 		K = in.nextDouble();
 		
 		System.out.println("Geben Sie den Zinssatz in Prozent ein: ");
@@ -53,16 +53,16 @@ public class Aufgabe_15 {
 		
 		if (K >= 0) {
 		
-			System.out.println("Für das " + i + ". Jahr fallen " + z + " € Zinsen an");
-			System.out.println("Im " + i + ". Jahr werden " + r + " € abbezahlt");
+			System.out.println("Fuer das " + i + ". Jahr fallen " + z + " $ Zinsen an");
+			System.out.println("Im " + i + ". Jahr werden " + r + " $  abbezahlt");
 			
 			if (i == 1) {
 			
-				System.out.println("Nach einem Jahr bleiben " + K + " € Schulden übrig");
+				System.out.println("Nach einem Jahr bleiben " + K + " $ Schulden uebrig");
 		
 			}else {
 				
-				System.out.println("Nach " + i + " Jahren bleiben " + K + " € Schulden übrig");
+				System.out.println("Nach " + i + " Jahren bleiben " + K + " $ Schulden uebrig");
 			}
 		} else {
 			

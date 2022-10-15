@@ -42,7 +42,7 @@ public class Kacheln extends JFrame implements ActionListener {
 		colors = new JButton("Farben");
 		colors.addActionListener(this);
 		p.add(colors);
-		reset = new JButton("Zurücksetzen");
+		reset = new JButton("Zuruecksetzen");
 		reset.addActionListener(this);
 		p.add(reset);
 		add(p, BorderLayout.SOUTH);
