@@ -1,3 +1,5 @@
+package com.Sander.Aufgaben;
+
 import java.util.Scanner;
 public class Aufgabe1 {
   public static void main(String[] args) {

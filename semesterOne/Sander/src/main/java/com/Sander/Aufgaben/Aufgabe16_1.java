@@ -1,4 +1,5 @@
-package aufgaben;
+package com.Sander.Aufgaben;
+
 import java.util.Scanner;
 public class Aufgabe16.1 {
   public static int t, m, x;
@@ -17,10 +18,12 @@ public class Aufgabe16.1 {
     } while (t > 31 || m > 12 || t < 0);
     in.close();
   }
+
   public static void Rechner() {
     int[] Monate = {0,31,59,90,120,151,181,212,243,273,304,334,365};
     x = Monate[m-1] + t;
   }
+  
   public static void Ausgabe() {
     System.out.println(x);
   }
