@@ -1,11 +1,14 @@
-package aufgaben;
+package com.Sander.Aufgaben;
+
 import java.util.Scanner;
+
 public class Aufgabe13 {
-  public static String Typ, v, Sitze; 			//Typ , Hoechstgeschwindigkeit, Sitze
-  public static int Pk, Pp;						//Leistung in kW, Leistung in PS
-  public static int j;							//Verfuegbarkeit
-  public static boolean k;						//Verfuegbarkeit
-  public static void Eingabe() {
+  public static String Typ, v, Sitze; // Typ , Hoechstgeschwindigkeit, Sitze
+  public static int Pk, Pp; // Leistung in kW, Leistung in PS
+  public static int j; // Verfuegbarkeit
+  public static boolean k; // Verfuegbarkeit
+
+  public void Eingabe() {
     Scanner in = new Scanner(System.in);
     System.out.println("Typ des Fahrzeugs: ");
     Typ = in.nextLine();
@@ -19,13 +22,15 @@ public class Aufgabe13 {
     System.out.println("1 = Fahrzeug verfuegbar");
     System.out.println("2 = Fahrzeug nicht verfuegbar");
     j = in.nextInt();
-    if (j == 1) {
+    if ( j == 1 ) {
       k = true;
-    } else if (j == 2) {
+    } else if ( j == 2 ) {
       k = false;
     }
+    in.close();
   }
-  public static void Anzeige() {
+
+  public void Anzeige() {
     System.out.println("Typ des Fahrzeugs: " + Typ);
     System.out.println("Hoechstgeschwindigkeit des Fahrzeugs: " + v);
     System.out.println("Leistung in kW und PS: " + Pk + "kW/" + Pp + "PS");
@@ -33,11 +38,13 @@ public class Aufgabe13 {
     System.out.println("Verfuegbarkeit: " + k);
     System.out.println();
   }
-  public static boolean ausleihbar() {
+
+  public boolean ausleihbar() {
     return k;
   }
-  public static void ausleihen() {
-    if (k == false) {
+
+  public void ausleihen() {
+    if ( k == false ) {
       System.out.println("Das Fahrzeug " + Typ + " ist bereits verliehen.");
       System.out.println();
     } else {

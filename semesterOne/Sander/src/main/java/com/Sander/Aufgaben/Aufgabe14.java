@@ -1,20 +1,23 @@
-package aufgaben;
+package com.Sander.Aufgaben;
+
 import java.util.Scanner;
+
 public class Aufgabe14 {
   public static int x;
   public static boolean y;
+
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     System.out.println("Dies ist ein Schaltjahrbestimmer.");
     System.out.println("Geben Sie eine beliebige Jahreszahl ein: ");
     x = in.nextInt();
-    if (x % 4 == 0) {
+    if ( x % 4 == 0 ) {
       y = true;
     }
-    if (x % 100 == 0) {
+    if ( x % 100 == 0 ) {
       y = false;
     }
-    if (x % 400 == 0) {
+    if ( x % 400 == 0 ) {
       y = true;
     }
     if ( y == true ) {
@@ -22,5 +25,6 @@ public class Aufgabe14 {
     } else {
       System.out.println("Das Jahr " + x + " ist kein Schaltjahr.");
     }
+    in.close();
   }
 }

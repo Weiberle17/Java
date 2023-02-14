@@ -1,4 +1,4 @@
-package aufgaben;
+package com.Sander.Aufgaben;
 
 import java.util.*;
 
@@ -181,6 +181,7 @@ public class Test_Sander {
       System.out.println(z);
 
     }
+    in.close();
   }
 
   /*public static void Eingabe() {

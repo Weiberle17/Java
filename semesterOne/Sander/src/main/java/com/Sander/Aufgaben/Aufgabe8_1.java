@@ -1,5 +1,6 @@
-package aufgaben;
-public class Aufgabe_8_O {
+package com.Sander.Aufgaben;
+
+public class Aufgabe8_1 {
   public static void main(String[] args) {
     int e = 0;
     double z = Math.random();

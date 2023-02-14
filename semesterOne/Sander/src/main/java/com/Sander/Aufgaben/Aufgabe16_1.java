@@ -1,7 +1,7 @@
 package com.Sander.Aufgaben;
 
 import java.util.Scanner;
-public class Aufgabe16.1 {
+public class Aufgabe16_1 {
   public static int t, m, x;
   public static void main(String[] args) {
     Eingabe();

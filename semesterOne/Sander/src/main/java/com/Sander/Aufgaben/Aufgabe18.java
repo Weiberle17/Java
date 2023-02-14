@@ -1,13 +1,17 @@
-package aufgaben;
+package com.Sander.Aufgaben;
+
 import java.util.Scanner;
+
 public class Aufgabe18 {
   public static int h, s, t;
   public static String a = "*", b = "";
+
   public static void main(String[] args) {
     Eingabe();
     Tanne();
     Stamm();
   }
+
   public static void Eingabe() {
     Scanner in = new Scanner(System.in);
     do {
@@ -15,9 +19,10 @@ public class Aufgabe18 {
       h = in.nextInt();
       System.out.println("Geben Sie die Hoehe des Stammes ein: ");
       s = in.nextInt();
-    } while (h < s || h - s < 2);
+    } while ( h < s || h - s < 2 );
     in.close();
   }
+
   public static void Tanne() {
     t = h - s;
     for (int i = 0; i < t; i++) {
@@ -26,8 +31,9 @@ public class Aufgabe18 {
       b = b + "*";
     }
   }
+
   public static void Stamm() {
-    for (int i =0; i < s; i++) {
+    for (int i = 0; i < s; i++) {
       a = "*";
       System.out.printf("%50s\n", a);
     }
