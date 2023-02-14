@@ -9,8 +9,6 @@ public class Individuum {
   }
 
   public void crossover(Individuum papa, Individuum mama) {
-    // NICHT FERTIG!!!!!!!!
-
     int trennstelle = (int) (Math.random() * bits.length);
     for (int i = 0; i < trennstelle; i++) {
       bits[i] = papa.bits[i];
@@ -20,12 +18,15 @@ public class Individuum {
     }
   }
 
-
   public void fitnessBerechnen() {
     // Anpassung eines GA an das Problem
+    int tempBudget = Daten.budget;
     fitness = 0;
     for (int i = 0; i < bits.length; i++) {
-      fitness += bits[i];
+      if ( (bits[i] == 1) && (tempBudget - Daten.kosten[i] >= 0) ) {
+        tempBudget -= Daten.kosten[i];
+        fitness += Daten.kunden[i];
+      }
     }
   }
 
@@ -53,4 +54,14 @@ public class Individuum {
     this.fitness = vorlage.fitness;
   }
 
+  public void mutieren() {
+    if ( Math.random() > 0.5 ) {
+      int stelle = (int) Math.random() * bits.length;
+      if ( bits[stelle] == 0 ) {
+        bits[stelle] = 1;
+      } else {
+        bits[stelle] = 0;
+      }
+    }
+  }
 }
