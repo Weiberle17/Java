@@ -5,7 +5,6 @@ import java.io.File;
 public class GA {
   public static void main(String args[]) {
     Daten.einlesen(new File("Inst1_100_1000.txt"));
-    // Daten.ausgabe();
 
     int popSize = 400;
     int anzahlIterationen = 100;
@@ -28,8 +27,8 @@ public class GA {
 
     for (int iter = 0; iter < anzahlIterationen; iter++) {
       for (int i = 0; i < nachkommen.length; i++) {
-        int elter1 = selektieren(pop)[0];
-        int elter2 = selektieren(pop)[1];
+        int elter1 = selektieren(pop);
+        int elter2 = selektieren(pop);
 
         nachkommen[i] = new Individuum();
         nachkommen[i].crossover(pop[elter1], pop[elter2]);
@@ -46,16 +45,18 @@ public class GA {
     best.ausgabe();
   }
 
-  public static int[] selektieren(Individuum[] liste) {
-    int[] twoBest = {0, 0};
-    for (int i = 0; i < liste.length; i++) {
-      if ( liste[i].fitness > liste[twoBest[0]].fitness ) {
-        twoBest[1] = twoBest[0];
-        twoBest[0] = i;
-      }
+  public static int selektieren(Individuum[] liste) {
+    int index = 0;
+
+    // Wettkampf
+    int index1 = (int) (Math.random() * liste.length);
+    int index2 = (int) (Math.random() * liste.length);
+    if ( liste[index1].fitness > liste[index2].fitness ) {
+      index = index1;
+    } else {
+      index = index2;
     }
-    System.out.println(twoBest[0]);
-    return twoBest;
+    return index;
   }
 
   public static void bestIndividuumAktualisieren(Individuum[] liste, Individuum best) {
