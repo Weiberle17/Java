@@ -4,7 +4,7 @@ import java.io.File;
 
 public class GA {
   public static void main(String args[]) {
-    Daten.einlesen(new File("Inst1_100_1000.txt"));
+    Daten.einlesen(new File("Inst3.txt"));
 
     int popSize = 400;
     int anzahlIterationen = 100;
@@ -40,11 +40,12 @@ public class GA {
       pop = nachkommen;
       nachkommen = new Individuum[popSize];
       bestIndividuumAktualisieren(pop, best);
-      System.out.println(pop[iter].fitness);
+      System.out.println(iter + " " + best.fitness);
     }
     best.ausgabe();
   }
 
+  // TODO: Überarbeiten Selektieren
   public static int selektieren(Individuum[] liste) {
     int index = 0;
 

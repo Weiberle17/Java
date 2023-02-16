@@ -8,6 +8,7 @@ public class Individuum {
     bits = new int[Daten.anzahlProjekte];
   }
 
+  // TODO: Überarbeiten Crossover
   public void crossover(Individuum papa, Individuum mama) {
     int trennstelle = (int) (Math.random() * bits.length);
     for (int i = 0; i < trennstelle; i++) {
@@ -40,10 +41,10 @@ public class Individuum {
   }
 
   public void ausgabe() {
-    for (int i = 0; i < bits.length; i++) {
-      System.out.print(bits[i]);
-    }
-    System.out.print(" " + fitness);
+    // for (int i = 0; i < bits.length; i++) {
+    //   System.out.print(bits[i]);
+    // }
+    System.out.print("Best: " + fitness);
     System.out.println();
   }
 
@@ -55,7 +56,7 @@ public class Individuum {
   }
 
   public void mutieren() {
-    if ( Math.random() > 0.5 ) {
+    if ( Math.random() > 0.3 ) {
       int stelle = (int) Math.random() * bits.length;
       if ( bits[stelle] == 0 ) {
         bits[stelle] = 1;

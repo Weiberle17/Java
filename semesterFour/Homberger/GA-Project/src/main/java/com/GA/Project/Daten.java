@@ -25,23 +25,21 @@ public class Daten {
         kunden[i] = in.nextInt();
         kosten[i] = in.nextInt();
       }
+      sortieren();
       in.close();
     } catch (FileNotFoundException e) {
       System.out.println(e.getMessage() + " --- ");
     }
-    sortieren();
   }
 
   public static void sortieren() {
-    for (int i = 0; i < kunden.length; i++) {
-      value[i] = (kunden[i] / (double) kosten[i]);
-      insertSort();
-    }
-  }
-
-  public static void insertSort() {
     double k;
     int l, m;
+    // Get Value Array
+    for (int i = 0; i < kunden.length; i++) {
+      value[i] = (kunden[i] / (double) kosten[i]);
+    }
+    // Sorting
     for (int i = 0; i < kunden.length; i++) {
       for (int j = kunden.length - 1; j > 0; j--) {
         if ( value[j - 1] < value[j] ) {
