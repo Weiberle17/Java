@@ -1,4 +1,4 @@
-package com.Sander.Skript;
+package com.Sander.Aufgaben;
 
 import java.util.ArrayList;
 import java.net.*;
