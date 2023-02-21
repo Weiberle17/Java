@@ -1,4 +1,4 @@
-package com.Sander.Aufgaben;
+package com.Sander.Skript;
 
 import java.net.*;
 import java.io.*;
