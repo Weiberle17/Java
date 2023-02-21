@@ -1,7 +1,7 @@
 package com.Sander.Aufgaben;
 
-import java.net.*;
 import java.util.Scanner;
+import java.net.*;
 import java.io.*;
 
 public class Client {
