@@ -1,6 +1,7 @@
 package com.Sander.Skript;
 
 import java.net.*;
+import java.util.Scanner;
 import java.io.*;
 
 public class Client {
@@ -8,13 +9,22 @@ public class Client {
     Socket server = new Socket( "localhost", 1234);
     InputStream input = server.getInputStream();
     OutputStream output = server.getOutputStream();
-    output.write(5);
-    output.write(10);
+    Scanner in = new Scanner(System.in);
+    System.out.println("Mit wie vielen Zahlen möchten Sie rechnen?");
+    int anzahl = in.nextInt();
+    output.write(anzahl);
+    System.out.println("Wollen Sie addieren(1), subtrahieren(2) oder multiplizieren(3)?");
+    int math = in.nextInt();
+    output.write(math);
+    for (int i = 0; i < anzahl; i++) {
+      output.write(in.nextInt());
+    }
     output.flush();
     System.out.println(input.read());
     server.close();
     input.close();
     output.close();
+    in.close();
   }
 
   public static void main(String[] args) {
