@@ -16,6 +16,7 @@ public class Client {
     System.out.println("Wollen Sie addieren(1), subtrahieren(2) oder multiplizieren(3)?");
     int math = in.nextInt();
     output.write(math);
+    System.out.println("Geben Sie nun die Zahlen mit denen gerechnet werden soll und bestätigen jeweils mit Enter");
     for (int i = 0; i < anzahl; i++) {
       output.write(in.nextInt());
     }
