@@ -59,15 +59,18 @@ public class Perzeptron {
   }
 
   public void gewichteAnpassen(double delta, double alpha, double[] x) {
-    // Uebungsaufgabe 1
-    // Hier euren Sourcecode einfuegen
+    for (int i = 0; i < x.length; i++) {
+      x[i] = x[i] + alpha * delta;
+    }
   }
 
   public double skalarProdukt(double[] w, double[] x) {
     // Uebungsaufgabe 2
     double result = 0.0;
 
-    // Hier euren Sourcecode einfuegen
+    for (int i = 0; i < w.length; i++) {
+      result = result + w[i] * x[i];
+    }
 
     return result;
   }
