@@ -8,7 +8,7 @@ public class Einlesen {
   static double[][] x; // Muster
   static int[] y; // Klasse
   static int n; // Dimension, d.h. Anzahl der Merkmale bzw. Eingaenge in das Perzeptron incl. BIAS
-  static int m; // Anzahl der Muster bzw. Trainingsbeispiele bzw. Datensätze
+  static int m; // Anzahl der Muster bzw. Trainingsbeispiele bzw. Datensaetze
 
   public static void ausgeben() {
     for (int i = 0; i < x.length; i++) {
