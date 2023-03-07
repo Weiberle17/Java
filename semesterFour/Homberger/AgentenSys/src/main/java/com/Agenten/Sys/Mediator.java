@@ -40,4 +40,22 @@ public class Mediator {
     proposal[element + 1] = wert1;
     return proposal;
   }
+
+  public boolean checkContract(int[] contract) {
+    boolean erg = true;
+    for (int i = 0; i < contract.length; i++) {
+      boolean in = false;
+      for (int j = 0; j < contract.length; j++) {
+        if ( contract[j] == i ) {
+          in = true;
+          break;
+        }
+      }
+      if ( !in ) {
+        erg = false;
+        break;
+      }
+    }
+    return erg;
+  }
 }
