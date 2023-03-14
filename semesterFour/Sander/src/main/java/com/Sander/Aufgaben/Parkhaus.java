@@ -6,12 +6,16 @@ public class Parkhaus {
   public Parkhaus() {
   }
 
-  public void einfahren() {
+  public synchronized void einfahren(int autoNr) {
     plaetze--;
+    System.out.println("Fahrzeug Nr. " + autoNr + " ist eingefahren.");
+    System.out.println("Es sind " + getPlaetze() + " Plätze frei.");
   }
 
-  public void ausfahren() {
+  public synchronized void ausfahren(int autoNr) {
     plaetze++;
+    System.out.println("Fahrzeug Nr. " + autoNr + " ist ausgefahren.");
+    System.out.println("Es sind " + getPlaetze() + " Plätze frei.");
   }
 
   public int getPlaetze() {

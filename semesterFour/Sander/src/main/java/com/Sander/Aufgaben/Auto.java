@@ -12,21 +12,24 @@ public class Auto extends Thread {
   }
 
   public void run() {
-    for (int i = 0; i < 10; i++) {
-      einparken();
-      System.out.println("Es sind " + myParkhaus.getPlaetze() + " Plätze frei.");
-      ausparken();
-      System.out.println("Es sind " + myParkhaus.getPlaetze() + " Plätze frei.");
+    for (int i = 0; i < 2; i++) {
+      try {
+        einparken();
+        sleep(200);
+        ausparken();
+      } catch (InterruptedException e) {
+        System.out.println("InterruptedException!");
+      }
     }
   }
 
   public void einparken() {
-    myParkhaus.einfahren();
+    myParkhaus.einfahren(number);
     this.parked = true;
   }
 
   public void ausparken() {
-    myParkhaus.ausfahren();
+    myParkhaus.ausfahren(number);
     this.parked = false;
   }
 
