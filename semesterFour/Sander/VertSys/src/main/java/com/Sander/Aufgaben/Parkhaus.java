@@ -3,9 +3,6 @@ package com.Sander.Aufgaben;
 public class Parkhaus {
   private int plaetze = 10;
 
-  public Parkhaus() {
-  }
-
   public synchronized void einfahren(int autoNr) {
     plaetze--;
     System.out.println("Fahrzeug Nr. " + autoNr + " ist eingefahren.");
