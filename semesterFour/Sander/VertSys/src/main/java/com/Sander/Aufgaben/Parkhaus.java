@@ -30,7 +30,7 @@ public class Parkhaus {
   public static void main(String[] args) {
     Parkhaus p1 = new Parkhaus();
 
-    for (int i = 0; i < 25; i++) {
+    for (int i = 1; i <= 25; i++) {
       new Auto(i, p1);
     }
   }
