@@ -12,9 +12,9 @@ public class Auto extends Thread {
 
   public void run() {
     try {
-      sleep((long) Math.random() * 100);
+      sleep((int) Math.random() * 1000);
       myParkhaus.einfahren(number);
-      sleep((long) Math.random() * 100);
+      sleep((int) Math.random() * 1000);
       myParkhaus.ausfahren(number);
     } catch (InterruptedException e) {
       System.out.println("InterruptedException!");
