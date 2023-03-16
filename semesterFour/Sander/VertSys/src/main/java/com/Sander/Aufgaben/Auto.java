@@ -11,15 +11,13 @@ public class Auto extends Thread {
   }
 
   public void run() {
-    for (int i = 0; i < 2; i++) {
-      try {
-        sleep((long) Math.random() * 100);
-        myParkhaus.einfahren(number);
-        sleep((long) Math.random() * 100);
-        myParkhaus.ausfahren(number);
-      } catch (InterruptedException e) {
-        System.out.println("InterruptedException!");
-      }
+    try {
+      sleep((long) Math.random() * 100);
+      myParkhaus.einfahren(number);
+      sleep((long) Math.random() * 100);
+      myParkhaus.ausfahren(number);
+    } catch (InterruptedException e) {
+      System.out.println("InterruptedException!");
     }
   }
 }
