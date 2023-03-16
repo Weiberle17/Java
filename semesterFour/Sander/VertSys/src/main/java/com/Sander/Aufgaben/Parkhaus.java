@@ -29,10 +29,9 @@ public class Parkhaus {
 
   public static void main(String[] args) {
     Parkhaus p1 = new Parkhaus();
-    Auto[] autos = new Auto[25];
 
-    for (int i = 0; i < autos.length; i++) {
-      autos[i] = new Auto(i, p1);
+    for (int i = 0; i < 25; i++) {
+      new Auto(i, p1);
     }
   }
 }
