@@ -12,19 +12,15 @@ public class Parkhaus {
       }
     }
     plaetze--;
-    System.out.println("Fahrzeug Nr. " + autoNr + " ist eingefahren. (" + getPlaetze() + " Plätze noch frei)");
+    System.out.println("Fahrzeug Nr. " + autoNr + " ist eingefahren. (" + plaetze + " Plätze noch frei)");
   }
 
   public synchronized void ausfahren(int autoNr) {
     plaetze++;
-    System.out.println("Fahrzeug Nr. " + autoNr + " ist ausgefahren. (" + getPlaetze() + " Plätze noch frei)");
+    System.out.println("Fahrzeug Nr. " + autoNr + " ist ausgefahren. (" + plaetze + " Plätze noch frei)");
     if (plaetze == 1) {
       notifyAll();
     }
-  }
-
-  public int getPlaetze() {
-    return plaetze;
   }
 
   public static void main(String[] args) {
