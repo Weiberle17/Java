@@ -2,7 +2,6 @@ package com.Sander.Aufgaben;
 
 public class Auto extends Thread {
   private int number;
-  private boolean parked = false;
   private Parkhaus myParkhaus;
 
   public Auto(int number, Parkhaus P) {
@@ -15,26 +14,12 @@ public class Auto extends Thread {
     for (int i = 0; i < 2; i++) {
       try {
         sleep((long) Math.random() * 100);
-        einparken();
+        myParkhaus.einfahren(number);
         sleep((long) Math.random() * 100);
-        ausparken();
+        myParkhaus.ausfahren(number);
       } catch (InterruptedException e) {
         System.out.println("InterruptedException!");
       }
     }
-  }
-
-  public void einparken() {
-    myParkhaus.einfahren(number);
-    this.parked = true;
-  }
-
-  public void ausparken() {
-    myParkhaus.ausfahren(number);
-    this.parked = false;
-  }
-
-  public boolean pstatus() {
-    return parked;
   }
 }
