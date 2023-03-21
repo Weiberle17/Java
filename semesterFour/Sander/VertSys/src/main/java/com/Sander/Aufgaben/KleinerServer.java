@@ -12,6 +12,11 @@ public class KleinerServer {
       Socket client = server.accept();
       InputStream input = client.getInputStream();
       OutputStream output = client.getOutputStream();
+      // Hatte zuerst mit ArrayList angefangen, um die Möglichkeit der variablen Eingabe zu realisieren.
+      // Hab das Programm dann allerdings so erweitert, dass alle Eingaben möglich sind.
+      // Jetzt ist eine ArrayList nicht mehr notwendig, da ich die Anzahl der zu rechnenden Zahlen separat eingebe.
+      // Ich habe hier ein bisschen rumprobiert, welche Möglichkeiten ich habe.
+      // Hätte ich gewusst, dass wir die Aufgabe einreichen müssen, hätte ich die Aufgabe nach den Vorgaben bearbeitet.
       ArrayList<Integer> zahlen = new ArrayList<Integer>();
       int anzahl = input.read();
       for (int i = 0; i <= anzahl; i++) {
