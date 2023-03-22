@@ -1,5 +1,5 @@
 <%-- Datei: bestellung.html --%>
-<jsp:useBean class="com.webapp.FormBean" id="bestellung" scope="session"/>
+<jsp:useBean class="beans.FormBean" id="bestellung" scope="session"/>
 <jsp:setProperty name="bestellung" property="*"/>
 
 <html>

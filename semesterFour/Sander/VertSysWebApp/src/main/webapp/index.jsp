@@ -1,6 +1,7 @@
 <%-- Datei: index.jsp --%>
-<%-- <jsp:useBean class="FormBean" id="bestellung" scope="session"/> --%>
-<%-- <jsp:setProperty name="bestellung" property="*"/> --%>
+<%@ page import="beans.FormBean" %>
+<jsp:useBean class="beans.FormBean" id="bestellung" scope="session"/>
+<jsp:setProperty name="bestellung" property="*"/>
 <html>
   <body>
     <form action="bestellung.jsp">
